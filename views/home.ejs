@@ -1,0 +1,21 @@
+<%- include('Partials/header'); -%>
+<h1>HOME</h1>
+<p>
+    <%= homeContent %>
+</p>
+
+<div>
+    <h2>Blogs</h2>
+    <% postTitle.forEach(function(post){ %>
+        <h4><a href="/posts/<%=post.postHead%>"><%= post.postHead %></a></h4>
+        <% let blogContent = post.postBody %>
+        <% if(blogContent.length > 100)  { %>
+            <% blogContent  = blogContent.slice(0,100) %>
+        <% } %>
+        <p><%= blogContent %> ... <a href="/posts/<%=post.postHead%>">Read More</a> </p>
+    <% }); %>
+   
+    
+</div>
+
+<%- include("Partials/footer"); -%>
