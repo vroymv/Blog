@@ -36,7 +36,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-...
+Project design and template is sourced from Angela Yu's Course on Web Development.
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
